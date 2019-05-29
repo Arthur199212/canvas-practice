@@ -35,7 +35,7 @@ class Circle {
     this.radius = radius;
     this.maxRadius = 50;
     this.minRadius = radius;
-    this.colors = ['#2B3D4F', '#E84E3C', '#F2FAFF', '#3599DB', '#34495E'];
+    this.colors = ['#F54236', '#344A5E', '#7E8B8C', '#BDC3C7', '#EDF2F2'];
     this.color = Math.floor(Math.random() * this.colors.length);
   }
 
@@ -93,11 +93,7 @@ function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, innerWidth, innerHeight);
 
-  // const colors = ['#2B3D4F', '#E84E3C', '#F2FAFF', '#3599DB', '#34495E'];
-  // let count = Math.floor(Math.random() * colors.length);
-
   for (let i = 0; i < circlesArray.length; i++) {
-    // circlesArray[i].draw();
     circlesArray[i].update();
   };
 }
